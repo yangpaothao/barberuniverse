@@ -1,0 +1,1079 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Sep 7, 2022, 10:02:26 AM
+    Author     : Yang Pao Thao
+    
+    //HEX color for menu bar bg-  #181818
+    //RGB color for menu bar bg-  rgb(24,24,24)
+    @ https://www.w3schools.com/colors/colors_shades.asp
+
+    //HEX color for text - #FFFFFF (white)
+    //RGB color for text - rgb(255,255,255) (white)
+
+ctrl + shift + - will collapse all
+*/
+body
+{
+   font-size: 1em !important;
+   color: #FFFFFF !important;
+   font-family: Arial !important;
+}
+.main-div{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.main-div-header{
+    background-color: #181818;
+    height: 60px;
+    width: 100%;
+}
+.main-div-footer{
+    height: 5%;
+    width: 100%;
+    padding-top: 5px; 
+}
+.main-div-body{
+    background-color: #FFFFFF;
+    height: 790px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ul.ul-parent{ 
+  display: flex;
+  justify-content: right;
+  align-items: center; 
+  list-style-type: none;
+} 
+ul.ul-child{
+    display: none;
+    list-style-type: none; /*if you do not want any image to the left of the list*/
+    padding: 20px;
+    margin-right: 29px; 
+    margin-top: 5px;
+}
+ul.ul-child > li{
+    float: left;
+}
+.ul-child-sub{
+    margin-left: -64px;
+}
+li{
+    display: inline-block;
+    padding: 10px; 
+    cursor: pointer;
+}
+.li-menu{
+    font-size: .8em;
+    margin-top: -8px;
+}
+.li-menu:hover .ul-child{
+    display: block;
+    position: absolute;
+    background-color: white;
+    padding: 0px;
+    color: black;
+    white-space: nowrap;
+    margin-left: -100px;
+    z-index:10;
+}
+.li-menu-sub {
+    background-color: #181818;
+    border: 1px solid white;
+    color: white;
+    width: 100%;
+    font-size: .9em;
+}
+.li-menu-sub:hover {
+    background-color: #2E86C1; /*a blue for when user hover mouse over submenus*/
+}
+.header-flightpath{
+    float: left;
+    display: block;
+    width: 100%;
+    height: 60px;
+    background-size: 200px 80px;
+    background-image: url("../images/headers/flightpath.webp");
+}
+.header-main-logo{
+    float: left;
+    display: block;
+    width: 12%;
+    height: 100%;
+    background-size: 200px 80px;
+    background-image: url("../images/headers/qantasmainlogo.svg");
+    background-repeat: no-repeat;
+}
+.header-airplane{
+    float: right;
+    width: 88%;
+    height: 100%;
+}
+.header-time-bar, .header-time-bar-date{
+    width: 30%; 
+    height: 100%; 
+    float: left;
+    text-align: center;
+    margin-top: 10px;
+}
+.header-time-bar-date{
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-top: 0px !important;
+}
+.body-div-content{
+    margin-top: -15px;
+    float: left;
+    height: 800px;
+    width: 24.8%;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 5px;
+    
+}
+.div-announcement{ 
+    border-left: 0px !important;
+}
+.div-message{ 
+    border-left: 0px !important;
+}
+.div-news{ 
+    border-left: 0px !important;
+}
+.div-namelbl {
+    padding: 5px;
+    color: black;
+    width: 100px;
+    text-align: right;
+    flex: 1;
+}
+.div-user {
+    text-align: left;
+    flex: 1;
+}
+.div-passwordlbl {
+    padding: 5px;
+    color: black;
+    width: 100px;
+    text-align: right;
+    flex: 1;
+}
+.div-password {
+    text-align: left;
+    flex: 1;
+    width: 300px
+}
+button{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #1D89D1;
+    width: 100px; 
+    height: 40px;
+    border: 1px solid;
+}
+.div-loginname{
+    width: 300px; 
+    height: 40px; 
+    white-space: nowrap; 
+    display: flex;
+}
+.div-loginpassword{
+    width: 300px; 
+    height: 40px; 
+    white-space: nowrap; 
+    display: flex;
+}
+.div-regpasword{
+    width:300px; 
+    height: 40px; 
+    margin: 0px auto;
+}
+.div-buttons{
+    width:300px; 
+    height: 40px; 
+    text-align: center;
+}
+.div-register{
+    width: 48%; 
+    float: left; 
+    text-align: center;
+    border-right: 1px solid black; 
+    padding-right: 5px; 
+    color: black
+}
+.div-retrievepassword{
+    width: 100%; 
+    text-align: left;
+    padding-top: 5px; 
+    color: black;
+}
+.registration-header{
+    text-align: center; 
+    width: 100%; 
+    height: 40px; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+    color: black; 
+    font-weight: bold;
+}
+.registration{
+    color: black !important;
+    width: 100%;
+    height: 40px; 
+    white-space: nowrap; 
+    display: flex;
+}
+.registrationlbl{
+    padding: 5px;
+    color: black;
+    width: 50%;
+    text-align: right;
+    flex: 1;
+}
+.registrationinput{
+    width: 70%;
+    text-align: left;
+}
+.admin-services-input{
+    width: 100%;
+    text-align: left;
+}
+.admin-company-input{
+    width: 98%;
+    text-align: left;
+}
+.required{
+    background-color: yellow;
+}
+.div-verifexpiredheader{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    color: black !important;
+    position: fixed;
+}
+.div-veriheader{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    color: black !important;
+}
+.div-confirmpassword{
+    width: 450px; 
+    height: 40px; 
+    white-space: nowrap; 
+    display: flex;
+}
+.div-confirmbuttons{
+    width:450px; 
+    height: 40px; 
+    text-align: center;
+}
+.div-verify-pwmin{
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    text-align: left;
+    color: black !important;
+    margin-left: 100px;
+}
+.main-div-body-profile{
+    background-color: #FFFFFF;
+    height: 80%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.main-div-body-order{
+    background-color: #FFFFFF;
+    height: 80%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.main-div-body-announcement{
+    background-color: #FFFFFF;
+    height: 80%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.main-div-body-admin{
+    background-color: #FFFFFF;
+    height: 80%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.main-div-body-profile-header{
+    width: 100%;  
+    font-size: 2em; 
+    font-weight: bold; 
+    color: black; 
+    text-align: center; 
+    float: left;
+    color: white;
+    padding: 10px;
+}
+.main-div-body-admin-header{
+    width: 100%; 
+    font-size: 2em; 
+    font-weight: bold; 
+    color: black; 
+    text-align: center; 
+    float: left;
+    color: white;
+    padding: 10px;
+}
+.main-div-body-profile-left{
+    width: 210px;
+    min-width: 210px;
+    float: left; 
+    font-size: .8em; 
+    color: white; 
+    resize: none;
+    height: 820px;
+    text-align: left;
+    border-right: 1px solid black;
+    background-color: #1079B1;
+}
+.main-div-body-admin-left{
+    width: 210px; 
+    min-width: 210px;
+    float: left; 
+    font-size: .8em; 
+    color: white; 
+    resize: none;
+    height: 820px;
+    text-align: left;
+    border-right: 1px solid black;
+    background-color: #1079B1;
+}
+.main-div-body-admin-right-container{
+   width: 58%; 
+   height: 100%; 
+   min-width: 560px;
+   min-height: 820px;
+   reize: none;
+   text-align: center;
+   float: left;
+   padding-left: 10px;
+   margin-top: -30px;
+}
+.main-div-body-order-right-container{
+   height: 800px;
+   min-height: 800px;
+   min-width: 1360px;
+   reize: none;
+   text-align: center;
+   float: left;
+   padding-left: 10px;
+   margin-top: -50px;
+   overflow-y: auto;
+}
+.main-div-body-order-right-container-data{
+   height: 400px;
+   min-height: 400px;
+   min-width: 600px;
+   reize: none;
+   text-align: center;
+   float: left;
+   padding-left: 10px;
+   margin-top: -50px;
+   overflow-y: auto;
+   display: none;
+   position: fixed;
+}
+.main-div-body-order-right-container-search{
+   height: 700px;
+   min-height: 700px;
+   min-width: 1340px;
+   reize: none;
+   text-align: center;
+   float: left;
+   overflow-y: auto;
+}
+.main-div-footer{
+    float: left; 
+    width: 100%; 
+    height: 100%; 
+    text-align: center; 
+    border-top: 1px solid gray;
+    color: black;
+}
+.announcement-input{
+    width: 300px;
+}
+.user-profile-input{
+    width: 300px;
+}
+.announcement-lbl{
+    text-align: right;
+    background-color: #393C3E; 
+    color: white;
+}
+.user-profile-lbl{
+    text-align: right;
+    color: black;
+}
+.main-div-body-retrieve-header{
+    width: 100%; 
+    height: 5%; 
+    font-size: 2em; 
+    font-weight: bold; 
+    color: black; 
+    text-align: center; 
+    float: left; 
+    margin-top: -20px;
+}
+.nav li{
+    background-color: white;
+    color: black;
+}
+.nav li:hover{
+    background-color: #87BFDD;
+}
+.nav li:focus{
+    background-color: #181818;
+    color: white;
+}
+.div-menu-profile{
+    text-align: right;
+    background-color: #1079B1; 
+    color: white; 
+    width: 189px; 
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.div-menu-profile:hover{
+    text-align: right;
+    background-color: #181818; 
+    color: white; 
+    width: 189px; 
+    height: 20px;
+    padding: 10px;
+ 
+}
+.div-menu-admin{
+    text-align: right;
+    background-color: #1079B1; 
+    color: white; 
+    width: 189px; 
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.div-menu-admin:hover{
+    text-align: right;
+    background-color: #181818; 
+    color: white; 
+    width: 189px; 
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+ 
+}
+.tbl-announcement{
+    background-color: #838383;
+}
+.tbl-orders{
+    background-color: white;
+    boarder: 1px solid black;
+}
+.tbl-profile-lbl{
+    background-color: #393C3E; 
+    color: white;
+}
+.tbl-order-lbl{
+    background-color: white; 
+    color: black;
+    text-align: right;
+    width: 110px;
+}
+.tbl-admin-register{
+    width: 550px;
+    background-color: #838383;
+    float: left;
+}
+.tbl-admin-register-lbl{
+    width: 30%;
+    text-align: right;
+    background-color: #393C3E; 
+    color: white;
+}
+.div-mgm-search-container{
+    float: left; 
+}
+.div-mgm-user-content{
+    width: 100%;
+    height: 100%;
+}
+.div-mgm-search{
+    float: left;
+    width: 100%;
+    height: 5%;
+}
+.txt-search-user{
+    float: left;
+    height: 30px;
+    margin-top: 2px; 
+    font-size: .8em; 
+    width: 190px;
+    text-align: left;
+}
+.submit-search-user{
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+.div-flowdata-containter{
+    height: 100%;
+    width: 100%;
+    margin-top: -32px;
+}
+.div-searchflowdata-containter{
+    height: 100%;
+    width: 100%;
+}
+.div-flow-legend{
+    float: left; 
+    height: 100%; 
+    width: 100%; 
+    margin-top: -30;
+    background-color: #4B697D;
+    cursor: pointer;
+}
+.div-flow-note{
+    float: left; 
+    height: 20px;
+    line-height: 20px;
+    width: 100%; 
+    background-color: #4B697D;
+    cursor: pointer;
+}
+.div-fid-note{
+    float: left; 
+    height: 20px;
+    line-height: 20px;
+    width: 100%; 
+    background-color: #4B697D;
+}
+.status-scheduled{
+    float: left;
+    background-color: white;
+    height: 100%;
+    width: 100px;
+    color: black;
+    text-align: center;
+    border: solid 1px black;
+    
+}
+.status-ata{
+    float: left;
+    background-color: green;
+    height: 100%;
+    width: 100px;
+    color: black;
+    text-align: center;
+    border: solid 1px black;
+}
+.status-eta{
+    float: left;
+    background-color: yellow;
+    height: 100%;
+    width: 100px;
+    color: black;
+    text-align: center;
+    border: solid 1px black;
+}
+.status-cancelled{
+    float: left;
+    background-color: MediumOrchid;
+    height: 100%;
+    width: 160px;
+    color: white;
+    text-align: center;
+    border: solid 1px black;
+}
+.status-delayed{
+    float: left;
+    background-color: darkred;
+    height: 100%;
+    width: 200px;
+    color: white;
+    text-align: center;
+    border: solid 1px black;
+}
+.div-flow-body-container{
+    height: 99%; 
+    width: 100%; 
+    overflow-y: scroll; 
+    float: left;
+}
+table{
+    border-collapse: collapse;
+}
+table th{
+    width: auto;
+    height: 30px;
+    white-space: nowrap;
+    background-color: #173346;
+    color: white;
+}
+table td{
+    height: 20px;
+    color: black;
+}
+.tbl-flow-data{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.tbl-flow-data tr{
+    height: 100%;
+    width: 100%;
+    height: 20px;
+}
+.tbl-flow-data th{
+    text-align: center;
+    height: 30px;
+    width: 35px;
+    font-size: 1em;
+}
+.tbl-flow-data td{
+    height: 100%;
+    text-align: left;
+    border: 1px solid black;
+}
+.input-flows{
+    height: 40px;
+    width: 89%;
+    border: 0px none;
+}
+.flow-txtarea-note{
+    width: 98%; 
+    height: 80%;
+    resize: none;
+}
+.flow-slt-status{
+    height: 100%; 
+    width: 100%;
+}
+.flow-button-depart{
+    width: 90%;
+    height: 40px;
+    text-align: center;
+}
+.flow-button-delete{
+    width: 90%;
+    height: 40px;
+    text-align: center;
+}
+.announcement-button-acknowledge{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+.serviceorder-button-delete{
+    width: 90%;
+    height: 40px;
+    text-align: center;
+}
+.select2-results { 
+    background-color: gray;
+}
+.flow-slt-engineer-wrapper{
+  width: 100%;
+  margin: auto;
+}
+.flow-slt-admin-wrapper{
+  max-width: 100%;
+  margin: auto;
+}
+.select2-results__options{
+   /*if we do not do this the Engineer drop down will not show properly, it will show in horizontal.*/
+   width: 100px;
+    
+} 
+.tbl-note-header{
+    text-align: center;
+    background-color: #173346; 
+    color: white;
+    font-size: 2em;
+}
+.tbltr-note-lbl{
+    height: 20px;
+    text-align: right;
+    background-color: #393C3E; 
+    color: white;
+}
+.noteinput{
+    width: 80%;
+    text-align: left;
+}
+.tbl-new-note{
+    width: 30%;
+    background-color: #838383;
+    margin: 0 auto;
+}
+.main-div-body-manageaircraft{
+    background-color: #FFFFFF;
+    height: 80%;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.div-menu-manageaircraft{
+    text-align: right;
+    background-color: #1079B1; 
+    color: white; 
+    width: 189px; 
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.div-menu-manageaircraft:hover{
+    text-align: right;
+    background-color: #181818; 
+    color: white; 
+    width: 189px; 
+    height: 20px;
+    padding: 10px;
+ 
+}
+.main-div-body-manageaircraft-left{
+    width: 210px;
+    min-width: 210px;
+    float: left; 
+    font-size: .8em; 
+    color: white; 
+    resize: none;
+    height: 820px;
+    text-align: left;
+    border-right: 1px solid black;
+    background-color: #1079B1;
+}
+.main-div-body-manageaircraft-header{
+    width: 100%;  
+    font-size: 2em; 
+    font-weight: bold; 
+    color: black; 
+    text-align: center; 
+    float: left;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main-div-body-manageaircraft-right-container{
+   width: 1500px;
+   min-width: 1500px;
+   min-height: 820px;
+   reize: none;
+   text-align: center;
+   float: left;
+   height: 820px;
+   padding-left: 10px;
+   margin-top: -30px;
+}
+.add-flight-input{
+    width: 300px;
+}
+.manage-flight-input{
+    width: 400px;
+    height: 90%;
+}
+.manage-flight-btn{
+    width: 70px;
+    font-size: .6em;
+    text-align: left;
+    background-color: #181818; 
+    float: left;
+    cursor: pointer;
+}
+.manage-flight-lbl{
+    width: 400px;
+    text-align: right;
+    background-color: #393C3E; 
+    color: white;
+    height: 40px;
+}
+.manage-flight-btn-clear-dates{
+    height: 20px; 
+    width: 60px; 
+    background-color: #181818;
+    cursor: pointer;
+}
+
+
+
+
+.tbl-manage-flight-calendar-dates{
+    cursor: pointer;
+    background-color: white;
+}
+.tbl-manage-flight-calendar-dates:hover{
+    background-color: lightblue;
+}
+.div-header-legend{
+    width: 100%;
+}
+.tbl-order-data{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.tbl-order-data tr{
+    height: 100%;
+    width: 100%;
+    height: 20px;
+}
+.tbl-order-data th{
+    text-align: center;
+    height: 30px;
+    width: 35px;
+    font-size: 1em;
+}
+.tbl-order-data td{
+    height: 100%;
+    text-align: left;
+    border: 1px solid black;
+}
+.user-order-input{
+    width: 80px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.service-order-inputs{
+    width: 100%; 
+    height: 90%; 
+    border: none; 
+    border-bottom: 1px solid black;
+}
+.div-service-order-data-container{
+    width: 650px; 
+    height: 30px;
+}
+.div-service-order-emplbl{
+    width: 140px; 
+    height: 20px; 
+    float: left; 
+    padding-left: 20px; 
+    vertical-align: bottom;
+}
+.div-service-order-emplbl-print{
+    width: 140px; 
+    height: 20px; 
+    float: left; 
+    padding-left: 20px; 
+    vertical-align: bottom;
+}
+.div-service-order-empinput{
+    float: left; 
+    width: 200px; 
+    height: 20px; 
+    padding-left: 10px; 
+    text-align: left; 
+    vertical-align: bottom;
+    border-bottom: 1px solid black;
+}
+.div-service-order-flightlbl{
+    height: 100%; 
+    float: left; 
+    padding-right: 10px; 
+    vertical-align: bottom;
+}
+.div-service-order-servicelbl{
+    float: left; 
+    padding-right: 10px; 
+    vertical-align: bottom;
+    width: 80px;
+    font-size: .8em;
+    text-align: right;
+    height: 20px;
+}
+.div-service-order-service-input-container{
+    float: left; 
+    width: 40px; 
+    height: 20px; 
+    text-align: left; 
+    vertical-align: bottom;
+    border-bottom: 1px solid black;
+}
+.div_service-order-data-service-container{
+    width: 160px; 
+    height: 100%; float: left;
+}
+.div-signature{
+    margin-left: 30px; 
+    width: 240px; 
+    height: 60px; 
+    text-align: left; 
+    vertical-align: bottom;
+    border-bottom: 1px solid black; 
+    background-color: lightgray;
+}
+.div-signature-line{
+    float: left; 
+    width: 110px;
+    height: 20px;
+    text-align: left; 
+    vertical-align: bottom; 
+    border-bottom: 1px solid black;
+}
+.div-signature-lbl{
+    width: 100px;
+    height: 20px; 
+    float: left; 
+    vertical-align: bottom; 
+    padding-right: 10px;
+}
+.div-menu-service-orders{
+    text-align: right;
+    background-color: #1079B1; 
+    color: white; 
+    width: 189px; 
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.search-service-orders{
+    height: 100%; 
+    width: 160px; 
+    float: left; 
+    white-space: nowrap; 
+    text-align: left;
+    padding-right: 20px;
+    background-color: #173346;
+    color: white;
+}
+.div-select-header{
+    height: 50px; 
+    width: 1540px;
+}
+.div-select-body-container{
+    width: 1360px;
+    height: 98%;
+}
+.tbl-fid-data-mini{
+
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.tbl-fid-data-mini tr{
+
+    width: 100%;
+    height: 20px;
+}
+.tbl-fid-data-mini th{
+    text-align: center;
+    height: 30px;
+    width: 35px;
+    font-size: 1em;
+}
+.tbl-fid-data-mini td{
+
+    text-align: left;
+    border: 1px solid black;
+}
+.main-div-body-searchflight-right-container-search{
+   height: 760px;
+   min-height: 760px;
+   min-width: 1360px;
+   reize: none;
+   text-align: center;
+   float: left;
+   padding-left: 10px;
+   overflow-y: auto;
+}
+.main-div-body-announcement-right-container-search{
+   height: 780px;
+   min-height: 780px;
+   min-width: 1360px;
+   reize: none;
+   text-align: center;
+   float: left;
+   padding-left: 10px;
+   margin-top: -50px;
+   overflow-y: auto;
+}
+.div-menu-service-announcement{
+    text-align: right;
+    background-color: #1079B1; 
+    color: white; 
+    width: 189px; 
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.main-div-body-order-header{
+    width: 100%; 
+    font-size: 2em; 
+    font-weight: bold; 
+    color: black; 
+    text-align: center; 
+    float: left;
+    color: white;
+    padding: 10px;
+}
+.main-div-body-announcement-header{
+    width: 100%; 
+    font-size: 2em; 
+    font-weight: bold; 
+    color: black; 
+    text-align: center; 
+    float: left;
+    color: white;
+    padding: 10px;
+}
+.main-div-body-announcement-left{
+    width: 210px; 
+    min-width: 210px;
+    float: left; 
+    font-size: .8em; 
+    color: white; 
+    resize: none;
+    height: 820px;
+    text-align: left;
+    border-right: 1px solid black;
+    background-color: #1079B1;
+}
+.main-div-body-order-left{
+    width: 210px; 
+    min-width: 210px;
+    float: left; 
+    font-size: .8em; 
+    color: white; 
+    resize: none;
+    height: 820px;
+    text-align: left;
+    border-right: 1px solid black;
+    background-color: #1079B1;
+}
+.img-edit-service-order{
+    height: 25px; 
+    width: 25px; 
+    float: left; 
+    margin-left: 10px;
+}
+.service-order-catheader{
+    height: 40px; 
+    width: 100%; 
+    float: left; 
+    text-align: center; 
+    cursor: pointer; 
+    color: black; 
+    font-size: 1.5em; 
+    font-weight: bold; 
+    padding-bottom: 10px;
+}
